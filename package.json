@@ -1,0 +1,20 @@
+{
+  "name": "application-name"
+, "version": "0.0.1"
+, "private": true
+, "scripts": {
+    "start": "node app"
+  , "test": "mocha -R spec test/*-test.js"
+  }
+, "dependencies": {
+    "restify": ">=1.4"
+  , "bunyan": ">=0.16"
+  , "yaml-config": ">=0.2"
+  , "forever": ">=0.10"
+  }
+, "devDependencies": {
+    "mocha": "*"
+  , "chai": "*"
+  , "supertest": ">=0.5"
+  }
+}

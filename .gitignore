@@ -1,0 +1,18 @@
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+# Node files #
+##############
+node_modules
+.jshintrc
+.nodelintrc
+npm-debug.log
+testing
+logs
+pids
+nohup.out
+*.log
+*.pid

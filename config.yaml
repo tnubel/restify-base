@@ -1,0 +1,7 @@
+default:
+  # port that the UI web server will be running on
+  webserver:
+    port: 8000
+  # port that this restful API server will run on
+  apiserver:
+    port: 9000
