@@ -6,6 +6,5 @@ Icon?
 Thumbs.db
 # Node files #
 ##############
-npm-debug.log
 logs
-pids
+*log
