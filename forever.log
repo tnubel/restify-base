@@ -1,0 +1,128 @@
+starting worker on port 9000
+starting worker on port 9000
+starting worker on port 9000
+starting worker on port 9000
+starting worker on port 9000
+starting worker on port 9000
+starting worker on port 9000
+starting worker on port 9000
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+
+events.js:72
+
+
+        throw er; // Unhandled 'error' event
+              ^
+
+events.js:72
+Error: bind EADDRINUSE
+    at errnoException (net.js:901:11)
+    at net.js:1073:26
+    at Object.6:1 (cluster.js:587:5)
+    at handleResponse (cluster.js:171:41)
+    at respond (cluster.js:192:5)
+    at handleMessage (cluster.js:202:5)
+    at process.EventEmitter.emit (events.js:117:20)
+    at handleMessage (child_process.js:318:10)
+    at child_process.js:392:7
+    at process.handleConversion.net.Native.got (child_process.js:91:7)
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+
+
+events.js:72
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+        throw er; // Unhandled 'error' event
+              ^
+        throw er; // Unhandled 'error' event
+        Error: bind EADDRINUSE
+    at errnoException (net.js:901:11)
+    at net.js:1073:26
+    at Object.5:1 (cluster.js:587:5)
+    at handleResponse (cluster.js:171:41)
+    at respond (cluster.js:192:5)
+    at handleMessage (cluster.js:202:5)
+    at process.EventEmitter.emit (events.js:117:20)
+    at handleMessage (child_process.js:318:10)
+    at child_process.js:392:7
+    at process.handleConversion.net.Native.got (child_process.js:91:7)
+   Error: bind EADDRINUSE
+    at errnoException (net.js:901:11)
+    at net.js:1073:26
+    at Object.2:1 (cluster.js:587:5)
+    at handleResponse (cluster.js:171:41)
+    at respond (cluster.js:192:5)
+    at handleMessage (cluster.js:202:5)
+    at process.EventEmitter.emit (events.js:117:20)
+    at handleMessage (child_process.js:318:10)
+    at child_process.js:392:7
+    at process.handleConversion.net.Native.got (child_process.js:91:7)
+Error: bind EADDRINUSE
+    at errnoException (net.js:901:11)
+    at net.js:1073:26
+    at Object.7:1 (cluster.js:587:5)
+    at handleResponse (cluster.js:171:41)
+    at respond (cluster.js:192:5)
+    at handleMessage (cluster.js:202:5)
+    at process.EventEmitter.emit (events.js:117:20)
+    at handleMessage (child_process.js:318:10)
+    at child_process.js:392:7
+    at process.handleConversion.net.Native.got (child_process.js:91:7)
+
+   ^
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: bind EADDRINUSE
+    at errnoException (net.js:901:11)
+    at net.js:1073:26
+    at Object.4:1 (cluster.js:587:5)
+    at handleResponse (cluster.js:171:41)
+    at respond (cluster.js:192:5)
+    at handleMessage (cluster.js:202:5)
+    at process.EventEmitter.emit (events.js:117:20)
+    at handleMessage (child_process.js:318:10)
+    at child_process.js:392:7
+    at process.handleConversion.net.Native.got (child_process.js:91:7)
+Error: bind EADDRINUSE
+    at errnoException (net.js:901:11)
+    at net.js:1073:26
+    at Object.3:1 (cluster.js:587:5)
+    at handleResponse (cluster.js:171:41)
+    at respond (cluster.js:192:5)
+    at handleMessage (cluster.js:202:5)
+    at process.EventEmitter.emit (events.js:117:20)
+    at handleMessage (child_process.js:318:10)
+    at child_process.js:392:7
+    at process.handleConversion.net.Native.got (child_process.js:91:7)
+Error: bind EADDRINUSE
+    at errnoException (net.js:901:11)
+    at net.js:1073:26
+    at Object.1:1 (cluster.js:587:5)
+    at handleResponse (cluster.js:171:41)
+    at respond (cluster.js:192:5)
+    at handleMessage (cluster.js:202:5)
+    at process.EventEmitter.emit (events.js:117:20)
+    at handleMessage (child_process.js:318:10)
+    at child_process.js:392:7
+    at process.handleConversion.net.Native.got (child_process.js:91:7)
+Error: bind EADDRINUSE
+    at errnoException (net.js:901:11)
+    at net.js:1073:26
+    at Object.8:1 (cluster.js:587:5)
+    at handleResponse (cluster.js:171:41)
+    at respond (cluster.js:192:5)
+    at handleMessage (cluster.js:202:5)
+    at process.EventEmitter.emit (events.js:117:20)
+    at handleMessage (child_process.js:318:10)
+    at child_process.js:392:7
+    at process.handleConversion.net.Native.got (child_process.js:91:7)

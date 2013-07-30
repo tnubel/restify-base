@@ -1,4 +1,3 @@
-/*jshint node:true, indent:2, globalstrict: true, asi: true, laxcomma: true, laxbreak: true */
 /*global describe:true, before:true, it:true */
 
 'use strict';
@@ -9,7 +8,7 @@ var util = require('util')
   , settings = require('yaml-config').readConfig(path.join(__dirname, '..', 'config.yaml'), 'default')
   , should = require('chai').should()
   , request = require('supertest')
-  , url = 'http://localhost:' + settings.apiserver.port
+  , url = 'http://localhost:' + settings.server.port;
 
 
 describe("test routes", function () {
@@ -22,16 +21,17 @@ describe("test routes", function () {
           .expect(404)
           .end(function (err, res) {
             if (err) {
-              return done(err)
+              if (err.code === 'ECONNREFUSED') return done(new Error('Server is not running.'));
+              return done(err);
             }
-            done()
-          })                
-  })
+            done();
+          });
+  });
   
 
   it('should return the correct test route (route:  /test)', function (done) {
     
-    var expected = 'test'
+    var expected = 'test';
     
     request(url)
           .get('/test')
@@ -39,12 +39,10 @@ describe("test routes", function () {
           .expect('Content-Type', 'application/json')
           .expect(200)
           .end(function (err, res) {
-            if (err) return done(err)
-            res.body.should.equal('test')
-            done()
-          })                
-  })
+            if (err) return done(err);
+            res.body.should.equal(expected.result);
+            done();
+          });
+  });
 
-
-
-})
+});
