@@ -1,4 +1,4 @@
-/*global describe:true, before:true, it:true */
+/*global describe:true, before:true, after: true, it:true */
 
 'use strict';
 
@@ -15,8 +15,11 @@ describe("test routes", function () {
 
   before(function (done) {
     
+    var server = require('../server');
+
     // make sure the server is started
-    request(url)
+    setTimeout(function() {
+      request(url)
           .get('/')
           .expect(404)
           .end(function (err, res) {
@@ -24,15 +27,12 @@ describe("test routes", function () {
               if (err.code === 'ECONNREFUSED') return done(new Error('Server is not running.'));
               return done(err);
             }
-            done();
+            return done();
           });
+    }, 500);
   });
-  
 
   it('should return the correct test route (route:  /test)', function (done) {
-    
-    var expected = 'test';
-    
     request(url)
           .get('/test')
           .set('Accept', 'application/json')
@@ -40,8 +40,10 @@ describe("test routes", function () {
           .expect(200)
           .end(function (err, res) {
             if (err) return done(err);
-            res.body.should.equal(expected.result);
-            done();
+            var resp = res.body;
+            resp.should.be.an('object');
+            resp.result.should.equal("test");
+            return done();
           });
   });
 

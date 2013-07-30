@@ -1,6 +1,7 @@
 default:
   server:
-    port: 9000
+    port: 8000
+    cluster: false
   logs:
     # log directory
     dir: logs
