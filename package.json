@@ -4,10 +4,10 @@
 , "private": true
 , "main": "server.js"
 , "scripts": {
-    "start": "forever start --append -o ./forever.log -e ./forever.log server.js"
-  , "stop": "forever stop server.js"
-  , "list": "forever list"
-  , "test": "mocha -R spec test/*-test.js"
+    "start": "./node_modules/.bin/forever start --append -o ./forever.log -e ./forever.log server.js"
+  , "stop": "./node_modules/.bin/forever stop server.js"
+  , "status": "./node_modules/.bin/forever list"
+  , "test": "./node_modules/.bin/mocha -R spec test/*-test.js"
   }
 , "dependencies": {
     "restify": "~2.6"
