@@ -12,7 +12,7 @@
 , "dependencies": {
     "restify": "~2.6"
   , "bunyan": "~0.21"
-  , "yaml-config": "~0.2"
+  , "yaml-config": "~0.3"
   , "forever": "~0.10"
   }
 , "devDependencies": {
