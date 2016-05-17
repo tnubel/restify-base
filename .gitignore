@@ -7,4 +7,5 @@ Thumbs.db
 # Node files #
 ##############
 logs
+node_modules
 *log
