@@ -6,7 +6,7 @@ restify-base
 
 ## Included
 
-This project will set up the basic structure for restify including setting up a [YAML configuration file](https://github.com/rjyo/yaml-config-node), logging with [bunyan](https://github.com/trentm/node-bunyan), and testing with [mocha](http://visionmedia.github.io/mocha/) and [supertest](https://github.com/visionmedia/supertest). The server will spawn a worker for each CPU using node's [cluster module](http://nodejs.org/docs/latest/api/cluster.html).
+This project will set up the basic structure for restify including setting up a [YAML configuration file](https://github.com/rjyo/yaml-config-node), logging with [bunyan](https://github.com/trentm/node-bunyan), and testing with [mocha](http://mochajs.org/) and [supertest](https://github.com/visionmedia/supertest). The server will spawn a worker for each CPU using node's [cluster module](http://nodejs.org/docs/latest/api/cluster.html).
 
 
 ## Usage
