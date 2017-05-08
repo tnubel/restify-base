@@ -19,6 +19,7 @@
     "mocha": "~1.12",
     "chai": "~1.7",
     "supertest": "~0.7"
+    ,"mocha-bamboo-reporter": "~1.1.1"
   },
   "engine": {
     "node": "~0.10"
